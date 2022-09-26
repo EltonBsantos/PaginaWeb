@@ -1,0 +1,9 @@
+import openpyxl
+
+book = openpyxl.Workbook()
+
+print(openpyxl.Workbook)
+book.create_sheet('Cadastro')
+
+cliente_page = book['Cadastro']
+book.save('Planilha de Cadastros.xlsx')
